@@ -467,7 +467,7 @@
 	<body>
 		<div class="page-wrap">
 			<header>
-				<h1>cj4 barebones portfolio</h1>
+				<h1>cj4's portfolio</h1>
 				<nav id="nav"></nav>
 				<div id="header-bar" class="header-bar"></div>
 			</header>
@@ -568,6 +568,27 @@
 				// WORKS
 				{
 					category: "works",
+					title: "ash twin project (outer wilds)",
+					subtitle: "2025",
+					image: null,
+					imageAlt: null,
+					video: "/portfolio/assets/videos/supernova.mp4",
+					gallery: null,
+					description: "recreation of the ash twin project, as well as the supernova<hr>this is used during a server shutdown<hr>this is in a portable format and can interact universally with other games/npcs/scripts",
+					tags: [
+						{
+							label: "scripting",
+							info: "all of it"
+						},
+						{
+							label: "source",
+							info: "the original game",
+							href: "https://store.steampowered.com/app/1809540"
+						},
+					],
+				},
+				{
+					category: "works",
 					title: "jade system (nine sols)",
 					subtitle: "2024-2025",
 					image: null,
@@ -609,7 +630,7 @@
 					imageAlt: null,
 					video: "/portfolio/assets/videos/windwaker.mp4",
 					gallery: null,
-					description: "recreation of the wind waker from zelda<hr>this is in a portable format and can interact universally with other games/npcs/scripts",
+					description: "recreation of the wind waker<hr>this is in a portable format and can interact universally with other games/npcs/scripts",
 					tags: [
 						{
 							label: "scripting",
@@ -639,7 +660,7 @@
 					imageAlt: null,
 					video: "/portfolio/assets/videos/tardis.mp4",
 					gallery: null,
-					description: "recreation of the TARDIS, from doctor who<hr>there are countless fanmade recreations of the TARDIS all over the internet, usually with complex controls and features; however, my interperetation of the TARDIS is a simple one, focusing on control and features in the show itself rather than being complex for the sake of being complex; it is akin to the gmod TARDIS<hr>this is in a portable format and can interact universally with other games/npcs/scripts",
+					description: "recreation of the TARDIS<hr>there are countless fanmade recreations of the TARDIS all over the internet, usually with complex controls and features; however, my interperetation of the TARDIS is a simple one, focusing on control and features in the show itself rather than being complex for the sake of being complex; it is akin to the gmod TARDIS<hr>this is in a portable format and can interact universally with other games/npcs/scripts",
 					tags: [
 						{
 							label: "scripting",
@@ -651,6 +672,17 @@
 							href: "https://en.wikipedia.org/wiki/Doctor_Who"
 						},
 					],
+				},
+				{
+					category: "works",
+					title: "notice",
+					subtitle: "",
+					image: null,
+					imageAlt: null,
+					video: null,
+					gallery: null,
+					description: "this page is unfinished",
+					tags: null
 				},
 				
 				// GAMES
@@ -777,7 +809,17 @@
 				},
 				
 				// HELPS
-				
+				{
+					category: "helps",
+					title: "notice",
+					subtitle: "",
+					image: null,
+					imageAlt: null,
+					video: null,
+					gallery: null,
+					description: "this page is unfinished",
+					tags: null
+				},
 			];
 
 			const navElement = document.getElementById("nav");
@@ -796,7 +838,7 @@
 
 			function renderCard(card) {
 				let html = "";
-
+				
 				html += '<div class="card">';
 				html += '<div class="card-header">';
 				html += "<h2>" + escapeHtml(card.title) + "</h2>";
