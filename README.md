@@ -1,2 +1,3 @@
 # portfolio
-or, my ever-expanding list of solo projects I'll never finish. 
+this is my first time actually using github
+ironically this is a template copy of my friend's portfolio project so some things might be wrong, i will be working on fixing that though
