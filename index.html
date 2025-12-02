@@ -495,10 +495,8 @@
 			</div>
 		</div>
 		<script>
-			const startYear = 2018;
-			const currentYear = new Date().getFullYear();
-			const years = currentYear - startYear;
-			const yearsText = years + (years === 1 ? " year" : " years");
+			const yearsText = new Date().getFullYear() - 2008;
+			const devyearsText = yearsText - 7;
 
 			// data
 			const categories = [
@@ -531,11 +529,7 @@
 			
 			const landingMessages = [
 				"TIP: You don't have to do anything anymore. Ever. Never Ever.",
-				"TIP: This is the tip that kills you. goodbye",
-				"TIP: I have a job.",
-				"TIP: If you're seeing this, I probably got fired from my job again.",
-				"TIP: You don't wanna see the JS on this site.", // that was reverse psychology. you got fooled. look at my code 😈😈😈
-				"TIP: You can add 88x31 gif buttons to the bottom of this site by sending a push. I WILL accept them." // line 483
+				"TIP: This is the tip that kills you. goodbye"
 			];
 			
 			const cards = [
@@ -548,7 +542,7 @@
 					imageAlt: null,
 					gallery: null,
 					description:
-						`Hi, I'm Sevie. I've been developing on Roblox for ${yearsText}. ` +
+						`hi im cj, i've been on roblox for ${yearsText}, and dev for ${devyearsText}` +
 						`I've learned a lot, and have worked on many solo and group projects. I'm most motivated working in groups, ` +
 						`and don't often finish projects on my own. I enjoy reverse-engineering games to learn how they work. ` +
 						`I develop games for fun, and won't work on anything I have no personal interest in. `,
