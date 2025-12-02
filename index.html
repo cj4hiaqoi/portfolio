@@ -467,7 +467,7 @@
 	<body>
 		<div class="page-wrap">
 			<header>
-				<h1>cj4 portfolio</h1>
+				<h1>cj4 barebones portfolio</h1>
 				<nav id="nav"></nav>
 				<div id="header-bar" class="header-bar"></div>
 			</header>
@@ -478,8 +478,8 @@
 				</div>
 			</section>
 			<div class="credits">
-				Made by <a href="https://github.com/cj4/portfolio" target="_blank">cj4</a> (@cj4hiaqoi).
-				Source by <a href="https://github.com/sehvie/portfolio" target="_blank">Sevie</a> (@sehvie).
+				made by <a href="https://github.com/cj4/portfolio" target="_blank">cj4</a> (@cj4hiaqoi)<hr>
+				source by <a href="https://github.com/sehvie/portfolio" target="_blank">sevie</a> (@sehvie)
 				<div class="badge-bar">
 					<!-- gif button space. please host ur gifs on like imgur or something i wont accept it if you use a host i don't recognize -->
 					<img src="/portfolio/assets/notepadpp2.gif">
@@ -501,36 +501,28 @@
 
 			// data
 			const categories = [
-				{ id: "home", label: "Home" }, // home tab, uses header-bar text
-				{ id: "games", label: "Team Projects" },
-				{ id: "work", label: "Work" },
-				{ id: "projects", label: "Projects" },
-				{ id: "ui", label: "UI Design" },
-				{ id: "misc", label: "Other" },
+				{ id: "home", label: "home" }, // home tab, uses header-bar text
+				{ id: "works", label: "works" },
+				{ id: "games", label: "projects" },
+				{ id: "helps", label: "contributions" },
 			];
 
 			const categoryDescriptions = {
 				home:
 					"cj4hiaqoi", //no longer appears
+				works:
+					"the main stuff: i make stuff, no one knows why",
 				games:
-					"Anything I've actively worked as a developer on at some point.",
-				work:
-					"Commissions or contributions where I helped someone else's project.",
-				projects:
-					"Personal experiments, prototypes, and solo projects.",
-				scripts:
-					"Scripting-heavy work: systems, tools, and other code I think is worth showing off.",
-				animation:
-					"Anything related to animation. I'm pretty good at animating, although I don't do it much.",
-				ui:
-					"Layouts, mockups, recreations. Any UI I've worked on that I like.",
-				misc:
-					"Other things that I couldn't fit into the previous categories."
+					"bigger projects (more formal) that i'm a part of",
+				helps:
+					"just random contributions",
 			};
 			
 			const landingMessages = [
-				"hewwwo?",
+				"helllloo?",
 				"auuuuuuurrr",
+				"mrmpht",
+				"welcome to my base",
 			];
 			
 			const cards = [
@@ -543,9 +535,9 @@
 					imageAlt: null,
 					gallery: null,
 					description:
-						`this site uses a template from my friend ` +
-						`most of her stuff might still be on here :P ` +
-						`if you are reading this, the site is like 1% done LOL `
+						`this site uses a template from my friend<hr>` +
+						`most of her stuff might still be on here :P<hr>` +
+						`if you are reading this, the site is like 1% done LOL `,
 					tags: [
 						{
 							label: "source",
@@ -562,9 +554,9 @@
 					imageAlt: null,
 					gallery: null,
 					description:
-						`hi im cj, i've been on roblox for ${yearsText} years, and a dev for ${devyearsText} years ` +
-						`the majority of my work consists of passion projects or remakes ` +
-						`i do not focus on monetization tactics; creative intention is more important to me `
+						`hi i'm cj, i've been on roblox for ${yearsText} years, and a dev for ${devyearsText} years<hr>` +
+						`the majority of my work consists of passion projects or remakes<hr>` +
+						`i do not focus on monetization tactics; creative intention is more important to me`,
 					tags: null,
 				},
 				{
@@ -575,9 +567,9 @@
 					imageAlt: null,
 					gallery: null,
 					description:
-						`i am a reserved and closed person; it is very rare for me to use public social media ` +
-						`this is primarily because social media is used to be transactional or ingenuine, which is the complete opposite of what is needed for creative expression ` +
-						`that being said, these are my personal accounts; please refrain from stalking or using these for "business" intentions `
+						`i am a reserved and closed person; it is very rare for me to use public social media<hr>` +
+						`this is primarily because social media is used to be transactional or ingenuine, which is the complete opposite of what is needed for creative expression<hr>` +
+						`that being said, these are my personal accounts; please refrain from stalking or using these for "business" intentions`,
 					tags: [
 						{
 							label: "disc",
@@ -592,382 +584,168 @@
 					],
 				},
 				
+				// WORKS
+				{
+					category: "works",
+					title: "jade system (nine sols)",
+					subtitle: "2024-2025",
+					image: null,
+					imageAlt: null,
+					video: "/portfolio/assets/jadesystem/eigong.mp4",
+					gallery: null,
+					description: "recreation of the nine sols system, as well as the final boss fight<hr>is in a portable format and can interact universally with other scripts",
+					tags: [
+						{
+							label: "scripting",
+							info: "all of it"
+						},
+						{
+							label: "animations",
+							info: "all of it"
+						},
+						{
+							label: "video demo",
+							info: "demonstration youtube link",
+							href: "https://www.youtube.com/watch?v=xtWy286_gFk"
+						},
+						{
+							label: "game demo",
+							info: "demonstration game link",
+							href: "https://www.roblox.com/games/87863350904179"
+						},
+						{
+							label: "source",
+							info: "the original game",
+							href: "https://store.steampowered.com/app/1809540"
+						},
+					],
+				},
+				
 				// GAMES
 				{
 					category: "games",
-					title: "Anthropolious",
-					subtitle: "Developer from 2022-Present",
+					title: "Rooms & Doors",
+					subtitle: "Creator 2020-Present",
 					image: null,
-					imageAlt: "Anthropolious Game Icons",
+					imageAlt: "game thumbnails",
 					gallery: [
-						"https://tr.rbxcdn.com/180DAY-9577893d7bb99dd9ac9c3588d7bfbd72/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-f9f5e15407354fbe3475f915971ce7ce/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-408ee2bcee7a0d4dfe6fc5332c3c1e8d/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-d133219b3e2cf59bc6cd57b3556280ff/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-a560f0f258be5963a32b85b9b10695e2/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-03f4ab6cefda70036ce2ec1c5287dc96/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-84149e601a13329143b39a5f6468f148/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-d5fc3ed1a58585721a498ff2ab695593/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-dd4b93faa30921053df6dba869a41d41/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-69c314aaacf1f1c50f824627820ddff3/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-6835718912d89014a4fded5720d3d494/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-46be53394e82adc7cb674ca3f8410463/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-27fe6eb51415b8589be8b8fa22734e46/768/432/Image/Webp/noFilter",
 					],
 					description:
-						"A community hangout game. Joined the team in 2022 and have worked on a wide variety of content and systems for the game.",
+						"based off of magic's Rooms+ and nicorocks' Rooms<hr>this is my current project as of late<hr>i absolutely love the horror genre, it's no surprise most of my projects are horror related<hr>the main drive for a remake was to expand upon the originals' ambient design; their gameplay was simple but so was everything else, which left room for improvement<hr>since the beginning, i used this game as an opportunity for experimentation; trying out unintended engine features and pushing roblox to its limits with amazing results, primarily viewport frame magic<hr>a while after DOORS came out, i embraced the difficulty aspect that my game had after being disappointed with how slow paced and easy to finish DOORS was",
 					tags: [
 						{
-							label: "Scripting",
-							info: "Moderation tools, custom chat, interactables, bugfixes, ect.",
+							label: "scripting",
+							info: "nearly all of it",
 						},
 						{
-							label: "Animation",
-							info: "Various animations.",
+							label: "animation",
+							info: "nearly all of it",
 						},
 						{
-							label: "UI",
-							info: "Past UI work",
+							label: "ui",
+							info: "all of it (not the art)",
 						},
 						{
-							label: "Moderation",
-							info: "Active game moderator.",
+							label: "sound design",
+							info: "i picked out most of the sounds to be used, despite not recording them myself",
 						},
 						{
-							label: "Group",
-							info: "Group Link",
-							href: "https://www.roblox.com/communities/14784323/TPR-AnthropoIis",
-						}
+							label: "music",
+							info: "vent (Room A-60), omega (Room A-1000)",
+						},
+						{
+							label: "game",
+							info: "game link",
+							href: "https://www.roblox.com/games/5865058321"
+						},
+						{
+							label: "group",
+							info: "group link",
+							href: "https://www.roblox.com/groups/34212935"
+						},
+						{
+							label: "source",
+							info: "the original game",
+							href: "https://www.roblox.com/games/5076734934"
+						},
 					],
 				},
 				{
 					category: "games",
-					title: "Myriad of Echoes",
-					subtitle: "Developer from 2025-Present",
+					title: "enscrypted",
+					subtitle: "Creator 2021-2022",
 					image: null,
-					imageAlt: "Myriad of Echoes Game Icons",
+					imageAlt: "game thumbnails",
 					gallery: [
-						"https://tr.rbxcdn.com/180DAY-f00fcd5fa32d311239f783be55e81506/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-9517d1ec6e9f863387eddec79d808403/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-ba2268ff67d5b2b0666cc5b33169473f/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-5d854d92e4b117d2fffc04040a426dd6/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-2c09a11eec565bbbe649a889ca933d84/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-96437c9ec1f2b5a60594c3299ab3378d/768/432/Image/Webp/noFilter",
 					],
 					description:
-						'A Rooms-Inspired Horror Game. In active development, the game is yet to be released.',
+						'based off of the game inscryption<hr>this is another fan project that was put into game format (so people could play it whenever they wanted)<hr>this was meant to be a solution to the lack of multiplayer in the original, i wanted to vs my friends so bad lol<hr>i stopped working on this because it felt like nothing more could be added',
 					tags: [
 						{
-							label: "Scripting",
-							info: "Content, Bugfixing. WIP Procedural Map Generation.",
+							label: "scripting",
+							info: "all of it",
 						},
 						{
-							label: "Group",
-							info: "Group Link",
-							href: "https://www.roblox.com/communities/17236205/PROJECT-HOMBRE"
-						}
+							label: "game",
+							info: "game link",
+							href: "https://www.roblox.com/games/8108767087"
+						},
+						{
+							label: "source",
+							info: "the original game",
+							href: "https://store.steampowered.com/app/1092790"
+						},
 					],
 				},
-
-				// PROJECTS
 				{
-					category: "projects",
-					title: "Throwables",
-					subtitle: "2025",
+					category: "games",
+					title: "Anthropolious",
+					subtitle: "Developer 2022-Present",
 					image: null,
-					imageAlt: null,
-					video: "/portfolio/assets/throwables.mp4",
+					imageAlt: "game thumbnails",
 					gallery: [
-						"/portfolio/assets/codebase-throwables.png",
-						"/portfolio/assets/throwable-module.png"
-					],
-					description: "A OOP-based throwables system, allowing players to pick up objects around the map and throw them at others. Uses modules for easy additions, so the base code doesn't need to be modified. (uses FastCast.)",
-					tags: [
-						{
-							label: "Scripting",
-							info: "UI functionality, block placement logic."
-						},
-						{
-							label: "UI",
-							info: "Full UI, sliced assets, icons."
-						}
-					],
-				},
-				{
-					category: "projects",
-					title: "Minecraft Building Game",
-					subtitle: "2023-2024",
-					image: "/portfolio/assets/RobloxStudioBeta_9Lkg9N1qB0.png",
-					imageAlt: "Minecraft-like tool UI",
-					gallery: null,
-					description: "Minecraft-like building. OOP, logic for block faces, viewport thumbnails for blocks, variation selections, ect.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "UI functionality, block placement logic."
-						},
-						{
-							label: "UI",
-							info: "Full UI, sliced assets, icons."
-						}
-					],
-				},
-				{
-					category: "projects",
-					title: "Animation Root Motion",
-					subtitle: "2024",
-					image: null,
-					imageAlt: null,
-					video: "/portfolio/assets/yakuzacombo.mp4",
-					gallery: null,
-					description: "A project in which I attempted to recreate root movement features present within other engines. Allows for multiple animations to play in sequence that move the character forwards without the player snapping back into place at the end of each animation. Not feature complete, and presented many more technical challenges that I would have to overcome, but I learned a lot in the process regardless.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Functionality, translating root movement to physical space."
-						},
-						{
-							label: "Animations",
-							info: "All animations shown are animated by me, based on the Yakuza 0 light attack combo."
-						}
-					],
-				},
-				{
-					category: "projects",
-					title: "Dungeon Generation",
-					subtitle: "2023/2024",
-					image: null,
-					imageAlt: "hi",
-					gallery: [
-					"/portfolio/assets/mapgentest-large.png",
-					"/portfolio/assets/mapgentest.png",
-					"/portfolio/assets/a lot of gen.png",
-					],
-					description: "Performant dungeon generator. Originally made for a roguelike project, but abandoned pretty early into development.",
-					tags: [],
-				},
-				
-				// WORK
-				{
-					category: "work",
-					title: "Toonblox Universe",
-					subtitle: "Moderator/Contributor from 2023-Present",
-					image: null,
-					imageAlt: "Toonblox Universe Game Icons",
-					gallery: [
-						"https://tr.rbxcdn.com/180DAY-ca8d3fc9e633fe3236ba15e6f12273fa/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-e0b63ddc3cd2dc1c3a1c6dae724914bd/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-0e96ab807038ab69d2f7ccfbdb04792a/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-c6fa122ddbd426d8cc24d8e44e5ab0be/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-d133219b3e2cf59bc6cd57b3556280ff/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-f9f5e15407354fbe3475f915971ce7ce/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-408ee2bcee7a0d4dfe6fc5332c3c1e8d/768/432/Image/Webp/noFilter",
+						"https://tr.rbxcdn.com/180DAY-9577893d7bb99dd9ac9c3588d7bfbd72/768/432/Image/Webp/noFilter",
 					],
 					description:
-						"A Continuation of the original Toonblox, Based on Toontown Online. Volunteered to help with animations to speed up the development process, although I am not actively a developer myself.",
+						"a community hangout game, where you hang out with the community in a game<hr>most of my work consists of backend stuff<hr>sometimes i moderate using my own tools; it's not my job but i'll take action anyways if someone utterly vile is in the game",
 					tags: [
 						{
-							label: "Animation",
-							info: "Various R15 Animations, based on the ones from Toontown",
+							label: "scripting",
+							info: "ui, settings, saving, secrets, backend, admin tools, server restart",
 						},
 						{
-							label: "Testing",
-							info: "Pre-Alpha tester.",
+							label: "ui",
+							info: "settings ui",
 						},
 						{
-							label: "Moderation",
-							info: "Active game moderator.",
+							label: "group",
+							info: "group link",
+							href: "https://www.roblox.com/communities/14784323/TPR-AnthropoIis",
 						},
 						{
-							label: "Group",
-							info: "Group Link",
-							href: "https://www.roblox.com/communities/2687888/Dat-Elevator-Studio",
-						},
-					],
-				},
-				{
-					category: "work",
-					title: "Rooms & Doors",
-					subtitle: "Contributor from 2023-Present",
-					image: null,
-					imageAlt: "RoomsyDoors",
-					gallery: [
-						"https://tr.rbxcdn.com/180DAY-a560f0f258be5963a32b85b9b10695e2/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-84149e601a13329143b39a5f6468f148/768/432/Image/Webp/noFilter",
-						"https://tr.rbxcdn.com/180DAY-46be53394e82adc7cb674ca3f8410463/768/432/Image/Webp/noFilter"
-					],
-					description:
-						"A \"Remaster\" of Rooms by Nicorocks5555, made by CJ4. Contributed in multiple ways early in development.",
-					tags: [
-						{
-							label: "Building",
-							info: "Room layout for A-20, and the (cancelled) B-Sector",
-						},
-						{
-							label: "Animations",
-							info: "Awesome dance animation (press 1 ingame)",
-						},
-						{
-							label: "Testing",
-							info: "Feature testing",
-						},
-						{
-							label: "Game",
-							info: "Game Page",
-							href: "https://www.roblox.com/games/5865058321/Rooms-Doors-Hidden-Tactics"
-						},
-					],
-				},
-				{
-					category: "work",
-					title: "Void Script Builder",
-					subtitle: "Active moderator from 2019-2023",
-					image: null,
-					imageAlt: null,
-					gallery: null,
-					description:
-						"Before being shut down, Void Script Builder was the most popular game in the Script Builder genre. VSB is where I gained most of my scripting experience, and it's the entire reason I became a developer.",
-					tags: [
-						{
-							label: "Moderation",
-							info: "Past moderator.",
-						},
-						{
-							label: "Group",
-							info: "Group Link",
-							href: "https://www.roblox.com/communities/3256759/Void-Community#!/about"
+							label: "game",
+							info: "game link",
+							href: "https://www.roblox.com/games/6675127933"
 						},
 					],
 				},
 				
-				// UI
-				{
-					category: "ui",
-					title: "Dark Souls UI",
-					subtitle: "2025",
-					image: "/portfolio/assets/darksouls-ui.png",
-					imageAlt: null,
-					video: null,
-					description: "UI based on the Dark Souls series.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Functionality for stat buildup"
-						},
-						{
-							label: "UI",
-							info: "Full UI, assets made by me."
-						}
-					],
-				},
-				{
-					category: "ui",
-					title: "Yakuza 0 UI",
-					subtitle: "2025",
-					image: "/portfolio/assets/yakuza-ui.png",
-					imageAlt: null,
-					video: null,
-					description: "UI made for a Yakuza 0 fangame. Recreated from scratch, doesn't use any game assets.",
-					tags: [
-						{
-							label: "UI",
-							info: "Full UI."
-						}
-					],
-				},
-				{
-					category: "ui",
-					title: "Inventory Jenga, Sorting System",
-					subtitle: "2024",
-					image: "/portfolio/assets/re4-sortbag.png",
-					imageAlt: null,
-					video: "/portfolio/assets/tim.mp4",
-					description: "An inventory system based on RE4. Items can be dragged around, and automatically sorted using the top button.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Some functionality, item dragging/rotation, sorting logic."
-						},
-						{
-							label: "UI",
-							info: "Full UI. Images are placeholders from Resident Evil 5."
-						}
-					],
-				},
-				{
-					category: "ui",
-					title: "FNAF SB Watch, Physical Pause Menu",
-					subtitle: "2024",
-					video: "/portfolio/assets/fazwatch-preview.mp4",
-					image: "/portfolio/assets/fazwatch-ui.png",
-					imageAlt: null,
-					description: "An in-world pause menu for a FNAF Security Breach inspired hangout game.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Basic functionality."
-						},
-						{
-							label: "UI",
-							info: "Full UI."
-						}
-					],
-				},
-				{
-					category: "ui",
-					title: "World Messages",
-					subtitle: "2023, Actively Maintained",
-					image: null,
-					imageAlt: null,
-					gallery: [
-						"/portfolio/assets/darksoulsmessage-ui.png",
-						"/portfolio/assets/darksoulsmessage-interact.png",
-						"/portfolio/assets/roguelineage-lol.png"
-					],
-					description: "Also based on the Dark Souls series, functional ui to create and place messages in the world based on preset phrases. Open source!",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Full functionality."
-						},
-						{
-							label: "UI",
-							info: "Full UI, assets made by me."
-						}
-					],
-				},
+				// HELPS
 				
-				// MISC
-				{
-					category: "misc",
-					title: "Weapon Types & Variants rewrite",
-					subtitle: "Rogue Lineage Concepts, 2023.",
-					image: null,
-					imageAlt: null,
-					gallery: ["/portfolio/assets/weapon-oop.png"],
-					video: "/portfolio/assets/roguewoken.mp4",
-					description: "During the time where I was messing with decompiled code for Rogue lineage (via a copy of the game that was made open source), I cleaned up and rewrote equipment handling for weapons, allowing for weapon additions without having to amend various sections of the CharacterHandler and other server code. The project will obviously never be released (I do not have the rights to ANY of the content here), but I enjoy doing this kind of stuff to learn how to improve.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Functionality, fully rewritten code for detecting, reading, processing weapon types, as well as handling attack combos and criticals/M2s."
-						},
-						{
-							label: "Animations",
-							info: "I'm fairly sure the swing animations are directly ripped from beta Deepwoken, but I DID recreate the crit myself."
-						},
-						{
-							label: "Assets",
-							info: "These assets are NOT mine! All models/sounds seen here are ripped from Deepwoken and Rogue Lineage."
-						}
-					],
-				},
-				{
-					category: "misc",
-					title: "Bard Rework (concept)",
-					subtitle: "Rogue Lineage Concepts, 2023.",
-					image: null,
-					imageAlt: null,
-					gallery: null,
-					video: "/portfolio/assets/bard-rework.mp4",
-					description: "A conceptual rework for bard's core mechanics and gameplay, to make the user more capable of watching and supporting teammates. In effect, abilities are debuffed across the board with an easier minigame, and a meter (Flow) that fills over time and can be activated for new buffs depending on the song, in place of the old snap armis bar.",
-					tags: [
-						{
-							label: "Scripting",
-							info: "Processing of beatmaps from scratch, ui functionality. Also made a companion studio plugin to make new beatmaps easily."
-						},
-						{
-							label: "UI",
-							info: "Full UI design."
-						}
-					],
-				},
 			];
 
 			const navElement = document.getElementById("nav");
@@ -1030,7 +808,7 @@
 
 				html += '<div class="win95-panel">';
 				html += '  <div class="win95-tabs">';
-				html += '	<div class="win95-tab active">Summary</div>';
+				html += '	<div class="win95-tab active">summary</div>';
 
 				if (Array.isArray(card.tags) && card.tags.length > 0) {
 					html += '	<div class="tags">';
@@ -1070,7 +848,8 @@
 				html += "  </div>"; // .win95-tabs
 
 				html += '  <div class="win95-body">';
-				html += "	<p>" + escapeHtml(card.description || "") + "</p>";
+				html += "	" + card.description;
+				//html += "	<p>" + escapeHtml(card.description || "") + "</p>";
 				html += "  </div>";
 
 				html += "</div>"; // .win95-panel
